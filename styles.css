@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: url("img/night.jpg") center/cover no-repeat fixed; /* Замените на путь к вашему изображению */
+    background: url("C:/Users/SystemX/Desktop/www.my-princess's-way.com/img/night.jpg") center/cover no-repeat fixed; /* Замените на путь к вашему изображению */
     color: white;
     backdrop-filter: blur(3px);
     text-align: center;
