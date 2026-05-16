@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Романтическая страница</title>
+<link rel="stylesheet" href="styles.css"> <!-- Подключение CSS-файла -->
+</head>
+<body>
+
+<div class="container">
+    <h1>
+        Теперь мы поедем куда давно ты хотела.<br>
+        Подсказка, не в Минске находится эта затея.<br>
+        На первом свидании туда мы хотели,<br>
+        Но все же решили, что малы метели.<br><br>
+
+        Мы мало знакомы, нет смысла мататься,<br>
+        И в следующий раз не успели податься.<br>
+        Скажу еще слово — и ты сразу поймешь,<br>
+        Куда же тебя твой мифка повез. 
+    </h1>
+    <textarea id="answer" placeholder="Твой ответ (с большой бувы)"></textarea>
+    <button onclick="checkAnswer()">Проверить</button>
+    <button onclick="showHint()">Подсказка</button>
+
+    <div id="result"></div>
+    <div id="hint">Твоя первая история в телеграм).</div>
+
+    <script>
+        function checkAnswer() {
+            const answer = document.getElementById('answer').value.trim();
+            const resultDiv = document.getElementById('result');
+            const correctAnswer = "Тир"; // Замените на ваш правильный ответ
+
+            if (answer === correctAnswer) {
+                resultDiv.textContent = "Правильно!";
+                resultDiv.className = "correct";
+            } else {
+                resultDiv.textContent = "Неверно!";
+                resultDiv.className = "incorrect";
+            }
+        }
+
+        function showHint() {
+            const hintDiv = document.getElementById('hint');
+            hintDiv.style.display = 'block'; // Показать подсказку
+        }
+    </script>
+
+</body>
+</html>

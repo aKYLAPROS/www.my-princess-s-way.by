@@ -1,0 +1,45 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url("https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat fixed; /* Замените на путь к вашему изображению */
+    color: white;
+    backdrop-filter: blur(3px);
+    text-align: center;
+    padding-top: 60px;
+}
+
+.container {
+    background: rgba(0,0,0,0.45);
+    padding: 30px;
+    width: 60%;
+    margin: auto;
+    border-radius: 12px;
+}
+
+textarea {
+    width: 90%;
+    height: 120px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    resize: none;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #ff6fa8;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#hint {
+    margin-top: 20px;
+    font-size: 18px;
+    display: none;
+}
